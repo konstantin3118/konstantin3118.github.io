@@ -1,0 +1,123 @@
+@charset "UTF-8";
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.header__up {
+  background-color: #18202A;
+}
+
+.header__btn-city {
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.header__btn-city:hover {
+  color: #2196f3;
+}
+
+.header__up .bi-geo-alt {
+  position: relative;
+  top: -0.125em;
+  font-size: 1.25em;
+}
+
+.header__up .bi-chevron-down {
+  position: relative;
+  top: 0.15em;
+}
+
+/*Модальное окно городов*/
+.modal-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.city-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.city-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.city-link:hover {
+  color: #2196f3;
+}
+
+.city-link.active {
+  font-weight: 600;
+  color: #2196f3;
+}
+
+.city-letter {
+  color: #2196f3;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.25rem;
+}
+
+.city-letter:first-child {
+  margin-top: 0;
+}
+
+/*Контакты в шапке*/
+.header__phone, .header__email {
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-font-feature-settings: 'tnum' 1;
+          font-feature-settings: 'tnum' 1;
+}
+
+.header__phone:hover, .header__email:hover {
+  color: #2196f3;
+}
+
+.header__email {
+  letter-spacing: 0.02em;
+}
+
+.header__up .bi-telephone {
+  font-size: 0.9em;
+}
+
+.header__up .bi-envelope {
+  position: relative;
+  top: 0.125em;
+}
+
+.bi-telegram {
+  color: #0088cc;
+}
+
+.bi-whatsapp {
+  color: #25d366;
+}
+
+/*Для того чтобы модальные окна сжимались меньше дефолтного 500px bootstrap*/
+@media (max-width: 575.98px) {
+  .modal-dialog {
+    max-width: 100vw !important;
+    width: 100vw !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+  }
+  .modal-content {
+    max-width: 100vw !important;
+    width: 100vw !important;
+    min-width: 0 !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
