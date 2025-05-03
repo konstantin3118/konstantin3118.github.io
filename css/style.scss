@@ -21,7 +21,6 @@ body {
 .header__up .bi-geo-alt {
     position: relative;
     top: -0.125em;
-    font-size: 1.25em;
   }
   
   .header__up .bi-chevron-down {
@@ -67,40 +66,26 @@ body {
   }
 
 /*Контакты в шапке*/
+.header__phone {
+  position: relative;
+  top: -0.125em;
+}
+
 .header__phone, .header__email {
   color: $color-white;
   text-decoration: none;
-  font-feature-settings: 'tnum' 1;
   &:hover {
     color: $color-acent;
   }
 }
 
-.header__email {
-  letter-spacing: 0.02em;
+.img-icon {
+  width: 1.5em;
+  height: 1.5em;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
 }
-
-.header__up .bi-telephone {
-  font-size: 0.9em;
-}
-
-.header__up .bi-envelope {
-  position: relative;
-  top: 0.125em;
-}
-
-.bi-telegram {
-  color: #0088cc;
-}
-
-.bi-whatsapp {
-  color: #25d366;
-}
-
-
-
-
-
 
 
 

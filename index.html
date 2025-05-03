@@ -25,20 +25,23 @@
                     <i class="bi bi-chevron-down"></i>
                 </button>
                 <div class="header__contacts d-flex align-items-center gap-3">
+                  <div class="header__phone-email d-flex align-items-end gap-3"> 
                       <a class="header__phone js-city-phone d-flex align-items-center gap-1" href="#">
-                        <i class="bi bi-telephone"></i>
                       </a>
-                    <a class="header__email js-city-email d-flex align-items-center gap-1" href="#">
-                      <i class="bi bi-envelope"></i>
-                    </a>
+                      <a class="header__email js-city-email d-flex align-items-center gap-1" href="#">
+                      </a>
+                  </div>
                     <div class="header__social d-flex align-items-center gap-2">
                       <a class="header__telegram js-city-telegram" href="#">
-                        <i class="bi bi-telegram"></i>
+                        <img class="header__telegram-icon img-icon" src="/img/icon/telegram.svg" alt="Telegram">
                       </a>
                       <a class="header__whatsapp js-city-whatsapp" href="#">
-                        <i class="bi bi-whatsapp"></i>
+                        <img class="header__whatsapp-icon img-icon" src="/img/icon/whatsapp.svg" alt="WhatsApp">
                       </a>
                     </div>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#callbackModal">
+                      Обратный звонок
+                    </button>
                 </div>
                 
             </div>
@@ -67,6 +70,29 @@
     </div>
   </div>
   <!-------------------------------------------------------------------->
+
+  <!-- Модальное окно обратного звонка-->
+  <div class="modal fade" id="callbackModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Обратный звонок</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <form id="callbackForm">
+          <div class="modal-body">
+            <label for="callbackPhone" class="form-label">Ваш телефон</label>
+            <input type="tel" class="form-control" id="callbackPhone" name="phone" required placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------------------------------->
+
 
     <script src="js/main.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

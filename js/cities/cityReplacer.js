@@ -48,7 +48,7 @@ class CityReplacer {
             '.js-city-telegram': {
                 href: data => data.telegram,
                 text: (data, el) => {
-                    const icon = el.querySelector('i');
+                    const icon = el.querySelector('i, svg, img');
                     el.textContent = '';
                     if (icon) el.appendChild(icon);
                 }
@@ -56,7 +56,7 @@ class CityReplacer {
             '.js-city-whatsapp': {
                 href: data => data.whatsapp,
                 text: (data, el) => {
-                    const icon = el.querySelector('i');
+                    const icon = el.querySelector('i, svg, img');
                     el.textContent = '';
                     if (icon) el.appendChild(icon);
                 }
